@@ -12,9 +12,12 @@ class ProfilePicture extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  CircleAvatar(
-      backgroundImage: AssetImage(image),
-      radius: radius,
+    return Padding(
+      padding: const EdgeInsets.only(right: 8),
+      child: CircleAvatar(
+        backgroundImage: AssetImage(image),
+        radius: radius,
+      ),
     );
   }
 }
