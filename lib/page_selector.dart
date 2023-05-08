@@ -67,9 +67,10 @@ class _PageSelectorState extends State<PageSelector> {
                   ),
                   label: 'Details'),
               NavigationDestination(
-                  selectedIcon: Icon(Icons.calendar_today_rounded),
+                  selectedIcon: Icon(Icons.calendar_today_rounded, size: 22),
                   icon: Icon(
                     Icons.calendar_today_rounded,
+                    size: 22,
                     color: Colors.grey,
                   ),
                   label: 'Reminders')
