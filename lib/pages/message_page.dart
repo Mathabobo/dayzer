@@ -21,7 +21,7 @@ class _MessagePageState extends State<MessagePage> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(18, 30, 18, 0),
+              padding: const EdgeInsets.fromLTRB(18, 25, 18, 0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -214,7 +214,7 @@ class _MessagePageState extends State<MessagePage> {
                           ),
 
                           const SizedBox(
-                            height: 20,
+                            height: 15,
                           ),
                         ],
                       ),
