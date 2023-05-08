@@ -10,16 +10,18 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 247, 238, 241),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           SafeArea(
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(25, 5, 25, 5),
+              padding: const EdgeInsets.fromLTRB(20, 40, 20, 5),
               child: Column(
                 children: [
                   //Appbar --> profile pic, greeting & notification bell
 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisSize: MainAxisSize.max,
                     children: [
                       Row(
                         children: const [

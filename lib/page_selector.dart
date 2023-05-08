@@ -30,7 +30,7 @@ class _PageSelectorState extends State<PageSelector> {
       bottomNavigationBar: NavigationBarTheme(
         data: const NavigationBarThemeData(indicatorColor: Colors.white),
         child: NavigationBar(
-          elevation: 20,
+            elevation: 20,
             height: 60,
             backgroundColor: Colors.white,
             labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
@@ -42,33 +42,37 @@ class _PageSelectorState extends State<PageSelector> {
             selectedIndex: _selectedItem,
             destinations: const [
               NavigationDestination(
-                  selectedIcon: Icon(Icons.home),
+                  selectedIcon: Icon(
+                    Icons.home_rounded,
+                    size: 26,
+                  ),
                   icon: Icon(
-                    Icons.home_outlined,
+                    Icons.home_rounded,
                     color: Colors.grey,
+                    size: 26,
                   ),
                   label: 'home'),
               NavigationDestination(
-                  selectedIcon: Icon(Icons.folder_copy),
+                  selectedIcon: Icon(Icons.folder),
                   icon: Icon(
-                    Icons.folder_copy_outlined,
+                    Icons.folder,
                     color: Colors.grey,
                   ),
                   label: 'files'),
               NavigationDestination(
-                  selectedIcon: Icon(Icons.message),
+                  selectedIcon: Icon(Icons.description_rounded),
                   icon: Icon(
-                    Icons.message_outlined,
+                    Icons.description_rounded,
                     color: Colors.grey,
                   ),
-                  label: 'message'),
+                  label: 'Details'),
               NavigationDestination(
-                  selectedIcon: Icon(Icons.calendar_month),
+                  selectedIcon: Icon(Icons.calendar_today_rounded),
                   icon: Icon(
-                    Icons.calendar_month_outlined,
+                    Icons.calendar_today_rounded,
                     color: Colors.grey,
                   ),
-                  label: 'settings')
+                  label: 'Reminders')
             ]),
       ),
     );

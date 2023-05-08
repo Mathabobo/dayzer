@@ -18,13 +18,23 @@ class _MessagePageState extends State<MessagePage> {
       backgroundColor: const Color.fromARGB(255, 200, 230, 167),
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(8, 8, 8, 0),
+              padding: const EdgeInsets.fromLTRB(18, 30, 18, 0),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   IconButton(
-                      onPressed: () {}, icon: const Icon(Icons.close_outlined))
+                      padding: EdgeInsets.zero,
+                      onPressed: () {},
+                      icon: const Icon(
+                        Icons.close_rounded,
+                        size: 28,
+                      )),
+                  IconButton(
+                      onPressed: () {},
+                      icon: const Icon(Icons.more_horiz_rounded))
                 ],
               ),
             ),
@@ -110,7 +120,7 @@ class _MessagePageState extends State<MessagePage> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Tasktracker(),
+                              const Tasktracker(),
                               Container(
                                 padding: const EdgeInsets.all(8),
                                 decoration: BoxDecoration(
@@ -204,7 +214,7 @@ class _MessagePageState extends State<MessagePage> {
                           ),
 
                           const SizedBox(
-                            height: 25,
+                            height: 20,
                           ),
                         ],
                       ),
